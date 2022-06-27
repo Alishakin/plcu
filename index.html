@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link href="css/index.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;500&family=Comfortaa:wght@700&family=Karla:wght@800&family=Montserrat:wght@300&family=Ms+Madi&family=Oswald:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+        <div id="contenedor">
+            <header>
+                <a href="tel:234-810-019-3747"><span class="material-symbols-outlined">
+call
+</span>234-810-019-3747</a>
+                <a href="email:aishatlabake90@gmail.com"><span class="material-symbols-outlined">
+mail
+</span>aishatlabake90@gmail.com</a>
+                
+            </header>
+            <nav>
+                <h1 id="head1"><span>PLCU</span> ULTIMA</h1>
+                <div id="main">
+                  <span style="font-size:30px;cursor:pointer;color: black" onclick="openNav()">&#9776;</span>
+                </div>
+            </nav>
+            <section id="seccion1">
+                <p style="font-weight: bolder;">WELCOME TO THE BLOCKCHAIN WORLD</p>
+                <p style="color: white; font-weight: 200; font-size: 27px;">PLCU COMMUNITY</p>
+                <hr/>
+                <p style="color: white;font-weight: 200;">Aliquip veniam ubi vidisse efflorescere iis laboris dolor nulla ab dolore. 
+                    Arbitror est multos hic te a concursionibus ita ita et quae anim veniam</p>
+                <button>CONTACT US</button>
+            </section>
+            <section id="seccion2">
+            <h2>What is PLCULTIIMA</h2>
+                <p style="border-left: solid 3px #F6A63C; padding-left: 20px; color:darkgrey"><i>Cillum qui deserunt eu malis, irure o deserunt. Quamquam malis quorum qui 
+                    aliqua, voluptate nulla irure vidisse elit do minim proident graviterque do 
+                    probant sint singulis ullamco.</i></p>
+                <p>In lorem ne multos nam ipsum instituendarum quibusdam quae cupidatat ne sint 
+                    expetendis in instituendarum, dolore excepteur e culpa nulla, possumus quo legam 
+                    ad excepteur graviterque o tempor in noster ut tempor, esse efflorescere</p>
+                <p>In lorem ne multos nam ipsum instituendarum quibusdam quae cupidatat ne sint 
+                    expetendis in instituendarum, dolore excepteur e culpa nulla, possumus quo legam 
+                    ad excepteur graviterque o tempor in noster ut tempor, esse efflorescere</p>
+            </section>
+            <img src="images/2.jpg">
+            <div id="container">
+                <video controls id="video" width="480" height="" control;>
+                <source src="videos/VID-20220627-WA0003.mp4" type="video/mp4" />
+                </video>
+                <div class="overlay">
+                <p>Watch the Video to Learn More about the Community</p>
+                </div>
+            </div>
+            <iframe width="480" height="315" src="https://www.youtube.com/embed/U_B9Qtf_TmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <section id="seccion4">
+            <h2 id="move">TESTIMONIALS</h2>
+            <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+    <video controls loop muted autoplay src="videos/VID-20220627-WA0004.mp4" style="width:100%"></video>
+  <div class="text">GERMANY</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <video controls loop muted autoplay src="videos/VID-20220624-WA0036.mp4" style="width:100%"></video>
+  <div class="text">DUBAI</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <video controls loop muted autoplay src="videos/VID-20220627-WA0005.mp4" style="width:100%"></video>
+  <div class="text">UNITED KINGDOM</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <video controls loop muted autoplay src="videos/VID-20220627-WA0002.mp4" style="width:100%"></video>
+  <div class="text">GERMANY</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <video controls loop muted autoplay src="videos/VID-20220508-WA0075.mp4" style="width:100%"></video>
+  <div class="text">GERMANY</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+            
+            </section>
+            
+                
+            <section id="seccion3">
+                <h2>STEPS</h2>
+                <p></p>
+                <img src=""/>
+            </section>
+        </div>
+        
+       
+
+	</body>
+</html>
