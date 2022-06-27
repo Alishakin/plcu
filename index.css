@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #022151;
+    justify-content: center;
+    padding: 15px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    
+}
+
+span{
+    color: #F6A63C;
+    
+}
+
+#head1{
+    font-weight: bolder;
+}
+
+#main{
+    margin: 10px 150px 10px 200px;
+}
+
+#seccion1{
+    background-image: url(../images/bitcoin-g74299886d_640.jpg);
+    background-size:cover;
+    color: #F6A63C;
+    font-weight: bolder;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+hr{
+        height: 2px;
+        background-color: #F6A63C;
+        border: none;
+        width: 100px;
+        margin-left: 0;
+        margin-top: 0px;
+}
+
+button{
+   background-color: #F6A63C; 
+    padding: 15px;
+    border-radius: 20px;
+    width: 160px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
