@@ -1,18 +1,18 @@
-
 <?php
 
-if (isset($_POST['submit'])) {
+        error_reporting(0);
+
 $DB_HOST = "localhost";
-$DB_USER = "admin";
-$DB_PASSWORD ="admin";
-$DB_NAME= "empresa";
+$DB_USER = "adminplcu";
+$DB_PASSWORD ="Admin";
+$DB_NAME= "plcultima";
 
 
 $name= $_POST['name'];
 $number= $_POST['number'];
 $email= $_POST['email'];
-$Date= $_POST['Date'];
-$password= $_POST['password'];
+$message= $_POST['message'];
+
  
     $connection = mysqli_connect($DB_HOST,$DB_USER,$DB_PASSWORD,$DB_NAME);
     
@@ -21,7 +21,8 @@ $password= $_POST['password'];
     }
     
     echo "connected successfully";
- $query = "INSERT INTO empleados VALUES('$name','$email','$number','$Date','$password')";
+//if (isset($_POST['submit'])) {
+ $query = "INSERT INTO prospects VALUES('$name','$email','$number','$message')";
     
  $run_query= mysqli_query($connection,$query);
  
@@ -30,5 +31,5 @@ $password= $_POST['password'];
  }else{
  echo "Failure in insert";
  }
-}
+//}
 ?>
