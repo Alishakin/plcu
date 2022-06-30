@@ -11,6 +11,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;500&family=Comfortaa:wght@700&family=Karla:wght@800&family=Montserrat:wght@500&family=Ms+Madi&family=Oswald:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+        #phone{
+  width: 85%;
+  padding: 20px 30px;
+  margin: 8px 20px;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-sizing: border-box;
+  float: left;
+}
+        
+        </style>
 	</head>
 
 	<body>
@@ -264,24 +277,56 @@ function showSlides(n) {
              
                 <h2 class="blue5">Contact Us</h2>
         <div id="formm"> <!-- un formulario de contacto-->
-           <form action="plcu.php" method="post">
+           <form action="index.php" method="post">
               <label for="fname"></label>
-              <input type="text" id="fname" placeholder="Name*">
+              <input type="text" id="fname" name="name" placeholder="Name*">
 
               <label for="email"></label>
-              <input type="text" id="email" placeholder="Email*">
+              <input type="text" id="email" name="email" placeholder="Email*">
       
               <label for="phone"></label>
-              <input type="text" id="phone" placeholder="Phone number*">
+              <input type="number" id="phone" name="number" placeholder="Phone number*">
     
-              <textarea rows = "5" cols = "50" id = "description">
-                 Message...
-              </textarea>
+              <textarea rows = "5" cols = "50" id = "description" name="message" placeholder="Message...." ></textarea>
               <input type="submit" value="Send Message" id="submit">
             </form>
          </div> 
                 </div>
-  
+  <?php
+
+        error_reporting(0);
+
+$DB_HOST = "localhost";
+$DB_USER = "adminplcu";
+$DB_PASSWORD ="Admin";
+$DB_NAME= "plcultima";
+
+
+$name= $_POST['name'];
+$number= $_POST['number'];
+$email= $_POST['email'];
+$message= $_POST['message'];
+
+ 
+    $connection = mysqli_connect($DB_HOST,$DB_USER,$DB_PASSWORD,$DB_NAME);
+    
+    if(!$connection){
+        die("Connection failure". mysqli_connect_error());
+    }
+    
+    echo "connected successfully";
+//if (isset($_POST['submit'])) {
+ $query = "INSERT INTO prospects VALUES('$name','$email','$number','$message')";
+    
+ $run_query= mysqli_query($connection,$query);
+ 
+ if($run_query){
+ echo "New recorder inserted";
+ }else{
+ echo "Failure in insert";
+ }
+//}
+?>
             
             
             
