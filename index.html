@@ -39,9 +39,30 @@ mail
             </header>
             <nav>
                 <h1 id="head1"><span>PLCU</span> ULTIMA</h1>
-                <div id="main">
-                  <span style="font-size:30px;cursor:pointer;color: black" onclick="openNav()">&#9776;</span>
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="index.html">ABOUT</a>
+                  <a href="mercedes.html">TESTIMONIES</a>
+                  <a href="lexus.html">PROGRAMS</a>
+                  <a href="toyota.html">GALLERY</a>
+                  <a href="contact.html">CONTACT</a>
                 </div>
+
+                <div id="main">
+                  <span style="font-size:30px;cursor:pointer; color:#132351;" onclick="openNav()">&#9776; MENU</span>
+                </div>
+
+                <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "200px";
+                  document.getElementById("main").style.marginLeft = "200px";
+                }
+
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                  document.getElementById("main").style.marginLeft= "0";
+                }
+                </script>
             </nav>
             <section id="seccion1">
                 <p style="font-weight: bolder;">WELCOME TO THE BLOCKCHAIN WORLD</p>
