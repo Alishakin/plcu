@@ -298,7 +298,7 @@ function showSlides(n) {
              
                 <h2 class="blue5">Contact Us</h2>
         <div id="formm"> <!-- un formulario de contacto-->
-           <form action="index.php" method="post">
+           <form action="plcu.php" method="post">
               <label for="fname"></label>
               <input type="text" id="fname" name="name" placeholder="Name*">
 
@@ -313,41 +313,6 @@ function showSlides(n) {
             </form>
          </div> 
                 </div>
-  <?php
-
-        error_reporting(0);
-
-$DB_HOST = "localhost";
-$DB_USER = "adminplcu";
-$DB_PASSWORD ="Admin";
-$DB_NAME= "plcultima";
-
-
-$name= $_POST['name'];
-$number= $_POST['number'];
-$email= $_POST['email'];
-$message= $_POST['message'];
-
- 
-    $connection = mysqli_connect($DB_HOST,$DB_USER,$DB_PASSWORD,$DB_NAME);
-    
-    if(!$connection){
-        die("Connection failure". mysqli_connect_error());
-    }
-    
-    echo "connected successfully";
-//if (isset($_POST['submit'])) {
- $query = "INSERT INTO prospects VALUES('$name','$email','$number','$message')";
-    
- $run_query= mysqli_query($connection,$query);
- 
- if($run_query){
- echo "New recorder inserted";
- }else{
- echo "Failure in insert";
- }
-//}
-?>
             
             
            <a  class="whats-app" href="https://api.whatsapp.com/send?phone=34631919767&text=Hi%2Ci%20am%20interested%20in%20the%20project%20Plcultima%2C%20My%20name%20is%20-" target="_blank">
