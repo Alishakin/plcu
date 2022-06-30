@@ -298,7 +298,7 @@ function showSlides(n) {
              
                 <h2 class="blue5">Contact Us</h2>
         <div id="formm"> <!-- un formulario de contacto-->
-           <form action="plcu.php" method="post">
+           <form action="index.php" method="post">
               <label for="fname"></label>
               <input type="text" id="fname" name="name" placeholder="Name*">
 
