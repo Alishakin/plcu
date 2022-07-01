@@ -355,6 +355,7 @@ $DB_USER = "b27ef61f7ec7bd";
 $DB_PASSWORD ="38778328";
 $DB_NAME= "heroku_d8deaedd8e198cb";
 
+if (isset($_POST['submit'])) {
 
 $name= $_POST['name'];
 $number= $_POST['number'];
@@ -368,10 +369,11 @@ $message= $_POST['message'];
         die("Connection failure". mysqli_connect_error());
     }
     
-if (isset($_POST['submit'])) {
  $query = "INSERT INTO prospects VALUES('$name','$email','$number','$message')";
     
  $run_query= mysqli_query($connection,$query);
+
+}
  
 /* if($run_query){
  echo "New recorder inserted";
@@ -380,7 +382,7 @@ if (isset($_POST['submit'])) {
  }*/
     
         
-}
+
 //if(!isset($_POST['submit']))
 //    {
 //        echo"error:you need to submit the form";
