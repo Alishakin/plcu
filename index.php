@@ -368,17 +368,16 @@ $message= $_POST['message'];
         die("Connection failure". mysqli_connect_error());
     }
     
-    echo "connected successfully";
 //if (isset($_POST['submit'])) {
  $query = "INSERT INTO prospects VALUES('$name','$email','$number','$message')";
     
  $run_query= mysqli_query($connection,$query);
  
- if($run_query){
+/* if($run_query){
  echo "New recorder inserted";
  }else{
  echo "Failure in insert";
- }
+ }*/
     
         
 //}
