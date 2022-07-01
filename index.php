@@ -309,7 +309,7 @@ function showSlides(n) {
               <input type="number" id="phone" name="number" placeholder="Phone number*">
     
               <textarea rows = "5" cols = "50" id = "description" name="message" placeholder="Message...." ></textarea>
-              <input type="submit" value="Send Message" id="submit">
+              <input type="submit" value="Send Message" id="submit" name="submit">
             </form>
          </div> 
                 </div>
