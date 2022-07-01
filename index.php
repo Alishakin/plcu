@@ -345,6 +345,71 @@ function topFunction() {
 }
         
         </script>
+		
+		<?php
+
+error_reporting(0);
+
+$DB_HOST = "eu-cdbr-west-03.cleardb.net";
+$DB_USER = "b27ef61f7ec7bd";
+$DB_PASSWORD ="38778328";
+$DB_NAME= "heroku_d8deaedd8e198cb";
+
+
+$name= $_POST['name'];
+$number= $_POST['number'];
+$email= $_POST['email'];
+$message= $_POST['message'];
+
+ 
+    $connection = mysqli_connect($DB_HOST,$DB_USER,$DB_PASSWORD,$DB_NAME);
+    
+    if(!$connection){
+        die("Connection failure". mysqli_connect_error());
+    }
+    
+    echo "connected successfully";
+//if (isset($_POST['submit'])) {
+ $query = "INSERT INTO prospects VALUES('$name','$email','$number','$message')";
+    
+ $run_query= mysqli_query($connection,$query);
+ 
+ if($run_query){
+ echo "New recorder inserted";
+ }else{
+ echo "Failure in insert";
+ }
+    
+        
+//}
+//if(!isset($_POST['submit']))
+//    {
+//        echo"error:you need to submit the form";
+//
+//    }
+//    $name= $_POST['name'];
+//    $number= $_POST['number'];
+//    $email= $_POST['email'];
+//    $message= $_POST['message'];
+//
+//    if(empty($name)||empty($number)||empty($email))
+//    {
+//        echo "Name,email and number are mandatory";
+//    }
+//
+//    $email_from = 'aishatlabake90@gmail.com';
+//    $email_subject = "New form submission";
+//    $email_body = "You have received a new form submission from the user $name.\n".
+//            "email address: $email \n".
+//            "Here is the message:\n $message".
+//
+//            $to = "alishmayor@gmail.com,aishatlabake90@gmail.com";
+//            $headers = "From: $email_from \r\n";
+//        
+//
+        
+?>
+       
        
 
 	</body>
