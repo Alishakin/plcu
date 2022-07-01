@@ -368,7 +368,7 @@ $message= $_POST['message'];
         die("Connection failure". mysqli_connect_error());
     }
     
-//if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
  $query = "INSERT INTO prospects VALUES('$name','$email','$number','$message')";
     
  $run_query= mysqli_query($connection,$query);
@@ -380,7 +380,7 @@ $message= $_POST['message'];
  }*/
     
         
-//}
+}
 //if(!isset($_POST['submit']))
 //    {
 //        echo"error:you need to submit the form";
