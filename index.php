@@ -69,7 +69,7 @@ mail
                 <p style="color: white; font-weight: 200; font-size: 27px;">PLCU COMMUNITY</p>
                 <hr/>
                 <p style="color: white;font-weight: 200;">PLC Ultima is a massive infrastructure project, which combines the innovation of the blockchain technology with the stability of dozens of time-tested business models. </p>
-                <a href="https://api.whatsapp.com/send?phone=34631919767&text=Hi%2Ci%20am%20interested%20in%20the%20project%20Plcultima%2C%20My%20name%20is%20-" class="button">CONTACT US</a>
+                <a href="https://api.whatsapp.com/send?phone=34665192736&text=Hi%2Ci%20am%20interested%20in%20the%20project%20Plcultima%2C%20My%20name%20is%20-" class="button">CONTACT US</a>
             </section>
             <section id="seccion2">
             <h2>What is PLCULTIIMA</h2>
@@ -315,7 +315,7 @@ function showSlides(n) {
                 </div>
             
             
-           <a  class="whats-app" href="https://api.whatsapp.com/send?phone=34631919767&text=Hi%2Ci%20am%20interested%20in%20the%20project%20Plcultima%2C%20My%20name%20is%20-" target="_blank">
+           <a  class="whats-app" href="https://api.whatsapp.com/send?phone=34665192736&text=Hi%2Ci%20am%20interested%20in%20the%20project%20Plcultima%2C%20My%20name%20is%20-" target="_blank">
     <i class="fa fa-whatsapp"></i>
 </a> 
             
